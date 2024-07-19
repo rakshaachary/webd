@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Selected Students</title>
+</head>
+<body>
+<h1>Selected Students for the Event:</h1>
+
+<ol>
+{% for student in students %}
+<li>{{ student.name }}</li>
+{% endfor %}
+</ol>
+<a href="{% url 'generate_csv' %}">Download CSV</a>
+<a href="{% url 'generate_pdf' %}">Download PDF</a>
+</body>
+</html>

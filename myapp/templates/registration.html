@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Page</title>
+</head>
+<body>
+<h1>Form Page</h1>
+<h1>ENTER the Details</h1>
+<form method="post">
+{% csrf_token %}
+<input type="text" name="sname" placeholder="Student Name">
+
+<input type="email" name="semail" placeholder="Enter Email">
+<input type="text" name="scourse" placeholder="Enter Course">
+<input type="submit" placeholder="SUBMIT">
+</form>
+</body>
+</html>
